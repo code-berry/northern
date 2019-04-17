@@ -1,0 +1,95 @@
+html, body {
+	margin: 0;
+	overflow: hidden;
+	background-color: #282828;
+}
+
+.mainContainer {
+	height: 100vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+h1 {
+	font-family: Montserrat;
+	font-size: 65px;
+	color: #fafafa;
+}
+
+h2 {
+	font-family: Montserrat;
+	font-size: 40px;
+	color: #e9e9e9;
+}
+
+hr {
+	width: 300px;
+	height: 7px;
+	background-color: #d02035;
+    float: left;
+}
+
+p {
+	color: #cdcdcd;
+	font-family: Merriweather;
+	font-size: 20px;
+}
+
+.clr {
+	clear: both;
+}
+
+.form-input {
+	padding: 15px;
+	width: 100%;
+	height: 58px;
+}
+
+.row button {
+	width: calc(100% - 30px);
+	display: block;
+	margin: 30px auto;
+	height: 55px;
+	font-family: Merriweather;
+	background-color: #d02035;
+	border: transparent;
+	font-weight: 700;
+	color: #fafafa;
+	border-radius: 6px;
+}
+
+button:focus {
+	outline: transparent !important;
+}
+
+input, select {
+	font-family: Merriweather;
+	background-color: #e5e5e5;
+	border: transparent;
+}
+
+button span {
+	font-size: 10px;
+    position: relative;
+    top: -2px;
+    right: -10px;
+}
+
+#submit {
+	visibility: hidden;
+}
+
+#errMsg {
+	position: absolute;
+	color: #797979;
+	top: -25px;
+	right: 15px;
+	font-family: Merriweather;
+	display: none;
+	font-size: 14px;
+}
+
+.hidden {
+	display: none;
+}

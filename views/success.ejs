@@ -1,0 +1,9 @@
+<%- include('main.ejs') %>
+
+<script>
+	$('button').text('Submitting...');
+	$('#emailInput').attr('placeholder', '<%= email%>');
+	setTimeout(() => {
+		window.open('/thankyou', '_self');
+	}, 2000);
+</script>

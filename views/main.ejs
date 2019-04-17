@@ -1,0 +1,36 @@
+<%- include('partials/header.ejs'); %>
+>
+<div class="mainContainer">
+	<div class="container">
+		<h1>INTERNSHIP SIGNUP FORM</h1>
+		<hr><div class="clr"></div>
+		<p>Prepare for your career with a Project Management, Web-Development, Graphic Design or Digital Marketing Internship at Northern.</p>
+		<form action="/" method="POST" id="northernForm">
+			<div class="row">
+				<div class="col-md">
+					<p id="errMsg">Please enter a valid email address.</p>
+					<input type="email"
+						class="form-input"
+						oninvalid="showErr()"
+						id="emailInput"
+						name="email"
+						placeholder="Your Email Address *"
+						required>
+				</div>
+				<div class="col-md">
+					<select name="interests" class="form-input" required>
+						<option value=""disabled selected>Your Interests</option>
+						<option value="Development">Development</option>
+						<option value="Graphic Design">Graphic Design</option>
+						<option value="Bathroom Crew">Bathroom Crew</option>
+					</select>
+				</div>
+			</div>
+			<div class="row">
+				<button>Sign Up Now <span>&#10148;</span></button>
+			</div>
+		</form>
+	</div>
+</div>
+
+<script src="js/main.js"></script>
